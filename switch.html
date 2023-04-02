@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+<body>
+    <h3>Enter your choice</h3>
+    <ul>
+        <li>add</li>
+        <li>sub</li>
+        <li>mul</li>
+    </ul>
+    <br>
+    <form action="">
+        <input type="text" id="choice">
+        <br>
+        <button onclick="myfun()">Click Me</button>
+    </form>
+
+    <script>
+                function myfun(){
+            var choice = document.getElementById("choice").value;
+
+            // alert(choice)
+
+            switch(choice){
+                case "add": var a = 20;
+                var b = 10;
+                document.write(a + b + " is your required sum") 
+                break
+
+                case "sub": var a = 20;
+                var b = 10;
+                document.write(a - b + " is your required sub")
+                break
+
+                case "mul": var a = 20;
+                var b = 10;
+                document.write(a * b + " is your required mul")
+                break
+
+                default: document.write("input correct option");
+            }
+        }
+    </script>
+</body>
+</html>

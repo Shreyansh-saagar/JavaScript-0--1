@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 id="heading">Modern Calculator</h1>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                    <button class="toggle-btn" type="button" onclick="sum()">Sum</button>
+                    <button class="toggle-btn" type="button" onclick="sub()">Sub</button>
+                    <button class="toggle-btn" type="button" onclick="mul()">Mul</button>
+                    <button class="toggle-btn" type="button" onclick="divi()">Div</button>
+                
+            </div>
+                <form  onsubmit="return false " class="math" id="sum">
+                    <div class="center">
+                        <input type="Number" class="form-field" id="a" placeholder="Enter value of a">
+                        <input type="Number" class="form-field" id="b" placeholder="Enter value of b">
+                        <button class="submit" id="add" onclick="add1()">ADD</button>
+                        <p id="result">Result is : <span id="res1">&nbsp;</span></p>
+                    </div>
+                </form>
+                <form onsubmit="return false" class="math" id="sub">
+                    <div class="center">
+                        <input type="Number" class="form-field" id="c" placeholder="Enter value of a">
+                        <input type="Number" class="form-field" id="d" placeholder="Enter value of b">
+                        <button class="submit" id="subt" onclick="sub1()">SUBTRACT</button>
+                        <p id="result">Result is : <span id="res2">&nbsp;</span> </p>
+                        <!-- <p id="result"></p> -->
+                    </div>
+                </form>
+                <form onsubmit="return false" class="math" id="mul">
+                    <div class="center">
+                    <input type="Number" class="form-field" id="e" placeholder="Enter value of a">
+                    <input type="Number" class="form-field" id="f" placeholder="Enter value of b">
+                    <button class="submit" id="mult" onclick="mul1()" >MULTIPLY</button>
+                    <p id="result">Result is : <span id="res3">&nbsp;</span> </p>
+                    <!-- <p id="result"></p> -->
+                    </div>
+                </form>
+                <form onsubmit="return false" class="math" id="divi">
+                    <div class="center">
+                    <input type="Number" class="form-field" id="g" placeholder="Enter value of a">
+                    <input type="Number" class="form-field" id="h" placeholder="Enter value of b">
+                    <button class="submit" id="divide" onclick="divi1()">DIVIDE</button>
+                    <p id="result">Result is : <span id="res4">&nbsp;</span></p>
+                    <!-- <p id="result"></p> -->
+                    </div>
+                </form>
+            
+        </div>
+        <h5 id="cr">Copyright: @Shreyasnh-saagar</h5>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

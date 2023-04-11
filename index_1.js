@@ -1,3 +1,5 @@
+//To use this script tag include it to your html file using script tag:     <script src="index_1.js">
+// ============================================================================================================================
 console.log("Hello")
 
 console.log(console)

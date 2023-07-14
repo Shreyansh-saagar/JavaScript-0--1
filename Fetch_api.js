@@ -1,4 +1,3 @@
-// https://github.com/public-apis/public-apis/blob/master/README.md
 
 let p  = fetch("https://goweather.herokuapp.com/weather/Ny");
 p.then((response)=>{

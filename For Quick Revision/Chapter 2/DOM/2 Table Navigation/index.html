@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Navigation Practice</title>
+    <style>
+        table {
+          border-collapse: collapse;
+        }
+        th, td {
+          border: 1px solid black;
+          padding: 8px;
+        }
+        .row {
+          background-color: #f0f0f0;
+        }
+        .column {
+          background-color: #e0e0e0;
+        }
+      </style>
+</head>
+<body>
+    <table id="myTable">
+        <thead>
+          <tr>
+            <th class="column" id="col1">Column 1</th>
+            <th class="column" id="col2">Column 2</th>
+            <th class="column" id="col3">Column 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row" id="row1">
+            <td class="column" id="cell11">Row 1, Column 1</td>
+            <td class="column" id="cell12">Row 1, Column 2</td>
+            <td class="column" id="cell13">Row 1, Column 3</td>
+          </tr>
+          <tr class="row" id="row2">
+            <td class="column" id="cell21">Row 2, Column 1</td>
+            <td class="column" id="cell22">Row 2, Column 2</td>
+            <td class="column" id="cell23">Row 2, Column 3</td>
+          </tr>
+          <tr class="row" id="row3">
+            <td class="column" id="cell31">Row 3, Column 1</td>
+            <td class="column" id="cell32">Row 3, Column 2</td>
+            <td class="column" id="cell33">Row 3, Column 3</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <script src="dom.js"></script>
+</body>
+</html>

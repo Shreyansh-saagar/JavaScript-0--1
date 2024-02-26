@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Content in DOM</title>
+    <style>
+        .container {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+        }
+        .box {
+          width: 100px;
+          height: 100px;
+          background-color: lightblue;
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid blue;
+        }
+        .highlight {
+          background-color: yellow;
+        }
+      </style>
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="box1" class="box">Box 1</div>
+        <div id="box2" class="box">Box 2</div>
+        <div id="box3" class="box">Box 3</div>
+        <span id="span1">Span 1</span>
+        <span id="span2">Span 2</span>
+        <p id="paragraph1" class="highlight">Paragraph 1</p>
+        <p id="paragraph2">Paragraph 2</p>
+        <ul id="list">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <a href="#" id="link" name="link">Link</a>
+      </div>
+
+      <script src="dom.js"></script>
+</body>
+</html>
